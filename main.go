@@ -34,7 +34,7 @@ func main() {
 		os.Exit(1)
 	}
 	defer db.Close()
-	app := NewKVStoreApplication(db)
+	app := NewKVStoreApplication()
 
 	flag.Parse()
 
